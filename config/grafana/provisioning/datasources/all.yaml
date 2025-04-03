@@ -1,0 +1,31 @@
+apiVersion: 1
+
+# List of datasources that should be deleted from the database
+# deleteDatasources:
+#   - name: Aerospike Prometheus
+#     orgId: 1
+#   - name: Aerospike Prometheus Alertmanager
+#     orgId: 1
+
+datasources:
+  - name: "Aerospike Prometheus Alertmanager"
+    type: alertmanager-datasource  # ✅ Fixed the correct type
+    access: proxy
+    url: http://alertmanager:9093
+    editable: true
+    isDefault: false
+
+  - name: "Aerospike Prometheus"
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    editable: true
+    isDefault: true  # ✅ Only one default
+
+  - name: "Loki"
+    type: loki
+    access: proxy
+    url: http://loki:3100
+    isDefault: false
+    jsonData:
+      maxLines: 1000  # ✅ Fixed indentation
