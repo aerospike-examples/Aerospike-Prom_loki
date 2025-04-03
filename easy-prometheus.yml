@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+
+rule_files:
+  - "/etc/prometheus/aerospike_rules.yml"
+  - "/etc/prometheus/deprecated_aerospike_rules.yml"
+  - "/etc/prometheus/aerospike_connector_rules.yml"
+  - "/etc/prometheus/node_exporter_alerts.yml"
+  - "/etc/prometheus/aerospike_secret_agent_rules.yml"
+
+scrape_configs:
+  - job_name: "aerospike_exporter"
+    static_configs:
+      - targets: ['exporter1:9145']
+
+  - job_name: "promtail"
+    static_configs:
+      - targets: ['promtail:9080']
