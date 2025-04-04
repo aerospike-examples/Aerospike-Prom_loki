@@ -1,11 +1,11 @@
-# Quick Start: Aerospike Monitoring Stack
+# 🚀 Quick Start: Aerospike Monitoring Stack
 
 This setup will create a single-node Aerospike cluster and deploy a monitoring stack using a simple `docker-compose` file.
 
-## Prerequisites
+## ✅ Prerequisites
 
-- Docker
-- Docker Compose
+- 🐳 Docker
+- ⚙️ Docker Compose
 
 ## Getting Started
 
@@ -17,9 +17,9 @@ To start the stack, run the following command:
 docker-compose up
 ```
 
-### Access the Dashboard
+###📊 Access the Dashboard
 
-Once the stack is up, open your browser and navigate to `http://localhost:4000/dashboards` to access the Grafana dashboard.
+Once the stack is up, open your browser and navigate to 👉  `http://localhost:4000/dashboards` to access the Grafana dashboard.
 
 - **Username:** admin
 - **Password:** admin
@@ -27,7 +27,7 @@ Once the stack is up, open your browser and navigate to `http://localhost:4000/d
 
 
 
-### Cluster Dasboard
+### 🛰️ Cluster Dasboard
 ![Cluster Image](images/cluster.png)
 🧠 Purpose of the Dashboard
 
@@ -45,7 +45,7 @@ It focuses on:
 
 
 
-### Explore Logs with Loki
+### 📜 Explore Logs with Loki
 
 ![Loki Image](images/loki.png)
 
@@ -58,7 +58,7 @@ It focuses on:
 4. To filter logs containing warnings, type `WARN` in the search line and run the query.
 
 
-## Stopping the Stack
+## 🛑 Stopping the Stack
 
 To stop the stack, run the following command:
 
@@ -67,6 +67,6 @@ docker-compose down
 ```
 Also Control + C to shutdown docker compose
 
-## Additional Information
+## 🛠️ Configs 
 
 For more details on configuration and customization, refer to the respective configuration files in the `config` directory.
