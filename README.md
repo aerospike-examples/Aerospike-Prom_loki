@@ -17,7 +17,7 @@ To start the stack, run the following command:
 docker-compose up
 ```
 
-###📊 Access the Dashboard
+### 📊 Access the Dashboard
 
 Once the stack is up, open your browser and navigate to 👉  `http://localhost:4000/dashboards` to access the Grafana dashboard.
 
