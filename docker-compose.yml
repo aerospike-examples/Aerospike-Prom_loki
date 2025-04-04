@@ -21,7 +21,7 @@ services:
     stdin_open: true
 
   exporter1:
-    image: aerospike/aerospike-prometheus-exporter:latest
+    image: aerospike/aerospike-prometheus-exporter:1.23.0
     container_name: exporter1
     environment:
       - AS_HOST=aerospike
