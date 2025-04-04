@@ -24,6 +24,27 @@ Once the stack is up, open your browser and navigate to `http://localhost:4000/d
 - **Username:** admin
 - **Password:** admin
 
+
+
+
+### Cluster Dasboard
+![Cluster Image](images/cluster.png)
+🧠 Purpose of the Dashboard
+
+This dashboard gives operators and SREs a comprehensive, real-time overview of Aerospike database clusters. It’s powered by Prometheus metrics and visualized via Grafana panels.
+
+It focuses on:
+•	Cluster health & versioning
+•	Alerts
+•	Cluster size
+•	Write stop flags
+•	Migrations
+•	Client read/write TPS
+•	Memory, CPU, and network usage
+
+
+
+
 ### Explore Logs with Loki
 
 1. In the Grafana navigation menu, click on **Explore**.
