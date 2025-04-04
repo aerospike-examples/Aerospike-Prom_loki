@@ -47,12 +47,16 @@ It focuses on:
 
 ### Explore Logs with Loki
 
+![Loki Image](images/loki.png)
+
+
 1. In the Grafana navigation menu, click on **Explore**.
 2. Select **Loki** as the data source.
 3. Use the following label filters to view logs:
     - `container_name`
     - `aerospike`
 4. To filter logs containing warnings, type `WARN` in the search line and run the query.
+
 
 ## Stopping the Stack
 
