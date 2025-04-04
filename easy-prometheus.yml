@@ -15,7 +15,7 @@ rule_files:
   - "/etc/prometheus/aerospike_secret_agent_rules.yml"
 
 scrape_configs:
-  - job_name: "aerospike_exporter"
+  - job_name: "aerospike"
     static_configs:
       - targets: ['exporter1:9145']
 
