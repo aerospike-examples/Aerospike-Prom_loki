@@ -1,4 +1,4 @@
-# Easy Aerospike Monitoring Stack
+# Quick Start: Aerospike Monitoring Stack
 
 This setup will create a single-node Aerospike cluster and deploy a monitoring stack using a simple `docker-compose` file.
 
